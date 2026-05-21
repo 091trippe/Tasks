@@ -1,0 +1,27 @@
+1. Docker Compose дозволяє запускати декілька контейнерів однією командою.
+
+2. Flask API та PostgreSQL працюють у спільній Docker-мережі.
+
+3. Дані PostgreSQL зберігаються у volume pgdata.
+
+4. CRUD API дозволяє:
+   - створювати задачі
+   - переглядати задачі
+   - оновлювати задачі
+   - видаляти задачі
+
+5. docker compose down зупиняє контейнери,
+   але volume залишається.
+
+6. docker compose down -v видаляє також volumes
+   і всі дані PostgreSQL. 
+
+
+
+
+   СТРУКТУРА ПРОЄКТУ: compose-api-lab/
+│
+├── compose.yaml
+├── Dockerfile
+├── requirements.txt
+└── app.py
