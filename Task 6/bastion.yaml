@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: bastion
+
+  labels:
+    role: bastion
+
+spec:
+
+  containers:
+    - name: bastion
+
+      image: curlimages/curl
+
+      command: ["sleep", "infinity"]
