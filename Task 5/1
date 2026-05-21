@@ -1,1 +1,7 @@
-
+task5-kubernetes/
+│
+├── app.py
+├── Dockerfile
+├── requirements.txt
+├── deployment.yaml
+└── service.yaml
