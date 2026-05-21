@@ -1,1 +1,11 @@
-
+task6-k8s-service/
+│
+├── docker/
+│   ├── app.py
+│   ├── Dockerfile
+│   └── requirements.txt
+│
+└── k8s/
+    ├── deployment.yaml
+    ├── service.yaml
+    └── bastion.yaml
