@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: my-backend
+
+spec:
+  replicas: 5
+
+  selector:
+    matchLabels:
+      app: my-backend
+
+  template:
+
+    metadata:
+      labels:
+        app: my-backend
+
+    spec:
+
+      containers:
+      - name: my-backend
+
+        image: yourdockerhubusername/python-backend:2.0.0
+
+        ports:
+        - containerPort: 5000
+
+        readinessProbe:
+
+          httpGet:
+            path: /health
+            port: 5000
+
+          initialDelaySeconds: 3
+          periodSeconds: 5
+          failureThreshold: 2
