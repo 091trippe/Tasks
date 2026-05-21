@@ -1,1 +1,15 @@
-
+task4-fullstack-compose/
+│
+├── compose.yaml
+│
+├── backend/
+│   ├── app.py
+│   ├── Dockerfile
+│   └── requirements.txt
+│
+└── frontend/
+    ├── Dockerfile
+    ├── nginx.conf
+    ├── index.html
+    ├── style.css
+    └── script.js
